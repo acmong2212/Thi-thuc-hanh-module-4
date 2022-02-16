@@ -81,7 +81,8 @@ function cityDetail() {
         success: function (data) {
             document.getElementById("id").value = data.id;
             document.getElementById("name").value = data.nameCity;
-            // document.getElementById("idCountries").innerText = data.country.nameCountry;
+            document.getElementById("nameCity").innerText = data.nameCity;
+            document.getElementById("idCountries").innerText = data.country.nameCountry;
             document.getElementById("area").value = data.area;
             document.getElementById("population").value = data.population;
             document.getElementById("gdp").value = data.gdp;
